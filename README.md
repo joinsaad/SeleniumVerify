@@ -1,3 +1,5 @@
 # SeleniumVerify
 A utility to verify your Selenium Web Driver Locators
-saad
+Developed by Mohammad Saad 
+Test Automation Lead @ eDevTech
+
