@@ -17,7 +17,9 @@ namespace WebDriverElementFinder
         public Form1()
         {
             tests = new SeleniumTests();
+           
             InitializeComponent();
+            cmbBrowser.SelectedItem = "FireFox";
         }
 
         private void btnOpenBrowser_Click(object sender, EventArgs e)
@@ -37,11 +39,22 @@ namespace WebDriverElementFinder
 
                 }
 
-                btnHighlight.Enabled = true;
-                btnOpenBrowser.Enabled = false;
-                btnQuitBrowser.Enabled = true;
+                var output = tests.TestMethod1(txtURL.Text, cmbBrowser.SelectedItem.ToString());
 
-                tests.TestMethod1(txtURL.Text);
+                if (output != "true")
+                {
+                    MessageBox.Show(output);
+                }
+                else
+                {
+
+                    btnHighlight.Enabled = true;
+                    btnOpenBrowser.Enabled = false;
+                    btnQuitBrowser.Enabled = true;
+
+                }
+
+             
 
             }
 

@@ -65,6 +65,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_executeCode = new System.Windows.Forms.Button();
+            this.cmbBrowser = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -74,7 +75,7 @@
             // 
             // btnOpenBrowser
             // 
-            this.btnOpenBrowser.Location = new System.Drawing.Point(332, 42);
+            this.btnOpenBrowser.Location = new System.Drawing.Point(535, 42);
             this.btnOpenBrowser.Name = "btnOpenBrowser";
             this.btnOpenBrowser.Size = new System.Drawing.Size(100, 23);
             this.btnOpenBrowser.TabIndex = 0;
@@ -325,7 +326,7 @@
             // btnQuitBrowser
             // 
             this.btnQuitBrowser.Enabled = false;
-            this.btnQuitBrowser.Location = new System.Drawing.Point(452, 42);
+            this.btnQuitBrowser.Location = new System.Drawing.Point(641, 42);
             this.btnQuitBrowser.Name = "btnQuitBrowser";
             this.btnQuitBrowser.Size = new System.Drawing.Size(100, 23);
             this.btnQuitBrowser.TabIndex = 22;
@@ -355,6 +356,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.cmbBrowser);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.btn_RemoveHighlight);
             this.tabPage1.Controls.Add(this.btnOpenBrowser);
@@ -453,6 +455,18 @@
             this.btn_executeCode.UseVisualStyleBackColor = true;
             this.btn_executeCode.Click += new System.EventHandler(this.btn_executeCode_Click);
             // 
+            // cmbBrowser
+            // 
+            this.cmbBrowser.FormattingEnabled = true;
+            this.cmbBrowser.Items.AddRange(new object[] {
+            "Firefox",
+            "Chrome",
+            "IE"});
+            this.cmbBrowser.Location = new System.Drawing.Point(341, 41);
+            this.cmbBrowser.Name = "cmbBrowser";
+            this.cmbBrowser.Size = new System.Drawing.Size(175, 21);
+            this.cmbBrowser.TabIndex = 24;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -513,6 +527,7 @@
         private System.Windows.Forms.TextBox txtLogs;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox cmbBrowser;
     }
 }
 

@@ -9,6 +9,8 @@ using OpenQA.Selenium.Remote;
 using Selenium;
 using Microsoft.ClearScript;
 using Microsoft.ClearScript.Windows;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.IE;
 
 namespace UnitTestProject
 {
@@ -67,10 +69,45 @@ namespace UnitTestProject
         #endregion
 
         [TestMethod]
-        public void TestMethod1(string URL)
+        public string TestMethod1(string URL,string Browser)
         {
-            driver = new FirefoxDriver();
-            driver.Navigate().GoToUrl(URL);
+            try
+            {
+
+                switch (Browser)
+                {
+                    case "Firefox":
+                        driver = new FirefoxDriver();
+                        break;
+
+
+                        case "Chrome":
+                        driver = new ChromeDriver();
+                        break;
+
+
+                        case "IE":
+                        driver = new InternetExplorerDriver();
+                        break;
+
+		                default:
+                        driver = new FirefoxDriver();
+                        break;
+                }
+                
+
+
+                driver.Navigate().GoToUrl(URL);
+
+                return "true";
+
+
+
+            }
+            catch(Exception ex)
+            {
+                return ex.Message;
+            }
 
             
 
