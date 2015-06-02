@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ClearScript">
-      <HintPath>..\..\..\SeleniumCodeRunner\SeleniumCodeRunner\bin\Debug\ClearScript.dll</HintPath>
+      <HintPath>F:\F Drive\UtilitiesDevelopedBySaad\SeleniumCodeRunner\SeleniumCodeRunner\bin\Debug\ClearScript.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Selenium.WebDriverBackedSelenium">
@@ -63,6 +63,13 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeleniumTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReferenceLibraries\ClearScript.dll" />
+    <Content Include="ReferenceLibraries\Selenium.WebDriverBackedSelenium.dll" />
+    <Content Include="ReferenceLibraries\ThoughtWorks.Selenium.Core.dll" />
+    <Content Include="ReferenceLibraries\WebDriver.dll" />
+    <Content Include="ReferenceLibraries\WebDriver.Support.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
