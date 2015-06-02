@@ -59,12 +59,12 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtLogs = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_executeCode = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtLogs = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -395,8 +395,44 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1073, 549);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Script Test";
+            this.tabPage2.Text = "Test Your Script";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(855, 8);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(210, 535);
+            this.textBox2.TabIndex = 26;
+            this.textBox2.Text = resources.GetString("textBox2.Text");
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 265);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(40, 13);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "Result:";
+            // 
+            // txtLogs
+            // 
+            this.txtLogs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLogs.Location = new System.Drawing.Point(6, 281);
+            this.txtLogs.Multiline = true;
+            this.txtLogs.Name = "txtLogs";
+            this.txtLogs.Size = new System.Drawing.Size(693, 133);
+            this.txtLogs.TabIndex = 7;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(20, 16);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(229, 13);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Write code here without declaring any variable.";
             // 
             // textBox1
             // 
@@ -417,42 +453,6 @@
             this.btn_executeCode.UseVisualStyleBackColor = true;
             this.btn_executeCode.Click += new System.EventHandler(this.btn_executeCode_Click);
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(20, 16);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(229, 13);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "Write code here without declaring any variable.";
-            // 
-            // txtLogs
-            // 
-            this.txtLogs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogs.Location = new System.Drawing.Point(6, 281);
-            this.txtLogs.Multiline = true;
-            this.txtLogs.Name = "txtLogs";
-            this.txtLogs.Size = new System.Drawing.Size(693, 133);
-            this.txtLogs.TabIndex = 7;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 265);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(40, 13);
-            this.label12.TabIndex = 8;
-            this.label12.Text = "Result:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(855, 8);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(210, 535);
-            this.textBox2.TabIndex = 26;
-            this.textBox2.Text = resources.GetString("textBox2.Text");
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -460,7 +460,7 @@
             this.ClientSize = new System.Drawing.Size(1105, 580);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Selenium Element Highlighter";
+            this.Text = "SeleniumVerify";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
